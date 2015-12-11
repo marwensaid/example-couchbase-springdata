@@ -39,6 +39,6 @@ public class TwitterService {
         String format = String.format(key, twitterAccount, timeCreate);
         TwitterUpdate twitterUpdate = new TwitterUpdate(key, timeCreate, twitterAccount, favoritesCount, followersCount, friendsCount, statusesCount);
 
-        TwitterUpdateRepository.save(twitterUpdate);
+        twitterUpdateRepository.save(twitterUpdate);
     }
 }
