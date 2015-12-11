@@ -18,7 +18,7 @@ public class TwitterService {
 
     private final TwitterUpdateRepository twitterUpdateRepository;
     private final Twitter twitter;
-    private String key;
+    private String key = "tw-%s-%d";
 
     @Autowired
     TwitterService(Twitter twitter, TwitterUpdateRepository twitterUpdateRepository) {
